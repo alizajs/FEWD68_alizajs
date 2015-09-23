@@ -1,0 +1,28 @@
+/*
+Blog Post Content
+*/
+h1{
+	text-align: center;
+}
+section{
+	color: blue;
+}
+
+#section-id{
+	font-family: helvetica;
+}
+
+.header-class {
+	font-family: arial;
+}
+
+.superman {
+	font-weight: bold;
+}
+.batman {
+	color:purple;
+}
+
+.wonderwoman{
+	background: red;
+}
