@@ -1,0 +1,67 @@
+
+h1{
+	text-align: center;
+	font-family: helvetica;
+}
+
+h2 {
+	font-family: helvetica;
+}
+
+h5 {
+	font-family: helvetica;
+	text-align: center;
+}
+
+h4 {
+	font-family: helvetica;
+	font-size: 14px;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: green;
+}
+
+img {
+	margin: 20px;
+	border: 1px solid black;
+	padding: 2px;
+
+}
+
+p {
+	font-family: georgia;
+	font-size: 14px;
+}
+
+p::first-letter {font-size: 50px; 
+}
+
+.work {
+	color: red;
+}
+
+#sweet {
+	color: #FF00FF;
+}
+
+.link {
+	font-style: italic;
+}
+
+.Assignments {
+	font-style: Georgia;
+	font-style: italic;
+	font-size: 12px;
+	font-
+}
+
+img.alizapic {
+	float:right;
+	margin-left: 10px;
+	border: black 1px;
+}
