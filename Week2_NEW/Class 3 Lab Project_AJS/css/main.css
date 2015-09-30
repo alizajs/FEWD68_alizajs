@@ -1,0 +1,33 @@
+
+
+.nav {
+    border: solid black 1px;
+    background-color: red;
+    margin: 20px;
+}
+
+.maincontent {
+  border: solid black 1px;
+  height: 300px;
+  width: 60%;
+  background-color: green;
+  display: inline-block;
+  margin: 10px;
+}
+
+.secondarycontent {
+  border: solid black 1px;
+  height: 300px;
+  width: 35%;
+  background-color: blue;
+  display: inline-block;
+  margin: 10px;
+}
+
+.footer {
+  border: solid black 1px;
+  text-align: center;
+  background-color: yellow;
+  height: 40px;
+  margin: 20px;
+}
