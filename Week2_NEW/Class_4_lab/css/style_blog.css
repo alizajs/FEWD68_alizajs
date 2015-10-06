@@ -1,0 +1,260 @@
+/*
+Project Name: Relaxr Blog
+Client: Relaxr
+Author: Aliza Sena
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     font-family: Helvetica, Arial, sans-serif;
+     line-height: 1.4;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  width: 960px;
+}
+
+/******************************************
+/* TOP NAV
+/*******************************************/
+
+header {
+  background: #033048;
+  height: 100px;
+}
+
+header h1 {
+  color: white;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  padding-left: 100px;
+  padding-right: 140px;
+  padding-top: 20px;
+}
+
+header h2{
+  color: #f9e42e;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+/******************************************
+ARTICLES / LEFT SIDE NAV
+/*******************************************/
+
+.articles {
+  background: #f0efef;
+  display: inline-block;
+  padding: 20px;
+  width: 700px;
+}
+
+.articles h3 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.articles p {
+  color: #606161;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 10px;
+  text-align: block;
+}
+
+.articles p:first-letter{
+  float:left;
+  font-size: 60px;
+  font-weight: 800;
+  padding: 3px;
+}
+
+hr {
+  color: #033048;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.articles h4 {
+  color: #033048;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.articles img {
+  margin-top: 20px;
+  width: 680px;
+}
+
+/******************************************
+RIGHT SIDE NAV
+/*******************************************/
+
+.sidebar{
+  background: #f0efef;
+  color: #033048;
+  display: inline-block;
+  padding: 20px;
+  vertical-align: top;
+  width: 240px;
+}
+
+.sidebar h3 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.sidebar li {
+  font-size: 24px;
+  font-weight: 300;
+  margin-left: 4px;
+  margin-top: 4px;
+}
+
+.sidebar p{
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.sidebar h5{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.ad img {
+  width: 200px;
+}
+
+.middle{
+  background-color: #f0efef;
+}
+
+
+a {
+  color: #f9e42e;
+}
+
+a:hover {
+  color: red;
+}
+
+/******************************************
+FOOTER AREA
+/*******************************************/
+
+.signup{
+  background-color: #f9e42e;
+  color: #121212;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.click {
+  background-color: #033048;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+footer {
+  background: #121212;
+  color: white;
+  height: 250px;
+  margin: auto;
+  text-align: center;
+}
+
+footer h1 {
+  color: #f9e42e;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 30px;
+}
+
+.socialmedia img{
+  height: 20px;
+  margin: 10px;
+}
+
+.socialmedia{
+  padding-bottom: 20px;
+}
+
+footer span {
+  font-size: 10px;
+  margin-top: 60px;
+}
+
+
+
+
+
