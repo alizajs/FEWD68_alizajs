@@ -1,7 +1,7 @@
 //wait for the DOM elements to load before executing
 $(document).ready(function() {
   //prevent the submit button from refreshing the page
-  $('#submit-btn').click(function(){
+  $('#submit-btn').click(function();{
     event.preventDefault();
     //get the value of the #city-type input and correct for capitalization
     var city = $('#city-type').val();
