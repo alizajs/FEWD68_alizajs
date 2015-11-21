@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="description" content="Decide what you're drinking tonight">
+      <meta name="keywords" content="cocktail, whiskey, rum, tequila, vodka, gin, recipe, bartender">
+
+    <!-- Google Font Links-->
+      <link href='https://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <title>DrinkFinder</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- external Javascript link -->
+    <link rel="javascript" href="javascript/java.js">
+
+    <!-- JQuery link -->   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <div id="container">
+
+    <!-- Header (About Button) -->
+  <header>
+    <div class="aboutButton"><a href="about.html">About</a></div>
+  </header>
+
+<!-- Welcome Splash Page -->
+    <div class="splash">
+      
+      <div>
+      HELLO THERE!
+      </div>
+
+      <div class="instructions">
+      It's 4 o'clock somewhere. What will you have?
+      </div>
+   
+    </div>
+
+<!-- Down Arrow -->
+    <div class="arrow bounce">
+    </div>
+
+<!-- Question Section -->
+  <div>
+
+    <div class="questionSection">
+      <div class="question">WHO IS YOUR SPIRITUAL DRINKING BUDDY?</div>
+      <div class="answerContainer">
+        <div id="q1a1" class="answer">Ernest Hemingway</div>
+        <div id="q1a2" class="answer">Jimmy Buffet</div>
+        <div id="q1a3" class="answer">Cruise Captain</div>
+      </div>
+    </div>
+
+<div>arrow</div>
+
+    <div class="questionSection">
+      <div class="question">HOW FANCY ARE YOU FEELING?</div>
+      <div id="q2a1" class="answer">Tiki Royalty</div>
+      <div id="q2a2" class="answer">Hula Winner</div>
+      <div id="q2a3" class="answer">Plastic Lei</div>
+    </div>
+
+    <div id="question3"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+
+<!-- Recipe Section -->
+<div class="cocktailResult">
+
+  <!--Recipe 1: Zombie-->
+    <div class="zombie">
+      <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
+      <h1>
+        ZOMBIE
+      </h1>
+      <recipe>
+        <ul class="igredients">
+          <li>1.5 oz Jamaican rum</li>
+          <li>1.5 oz gold Puerto Rican rum</li>
+          <li>1 oz 151-proof Demerara rum</li>
+          <li>1/8 tsp Herbsaint or Pernod</li>
+          <li>1/2 oz falernum</li>
+          <li>1/2 oz Donn’s Mix (see below)</li>
+          <li>1 tsp grenadine</li>
+          <li> dash Angostura bitters</li>
+          <li>6 oz crushed ice</li>
+        </ul>
+
+        <p>Put everything in blender, saving the ice for last. Blend at high speed for no more than 5 seconds. Pour into a glass and add ice cubes to fill. Garnish.</p>
+        <p class="credit">
+          <a href="http://imbibemagazine.com/recipe-zombie/">(thanks imbibe!)</a>
+        </p>
+     </recipe>
+    </div>
+
+  <!--Recipe 2: Pina Colada
+    <div class="pinaColada">
+      <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
+      <div class="recipeText">
+      <h1>
+        PINA COLADA
+      </h1>
+      <recipe>
+        <ul class="ingredients">
+          <li>1.5 oz coconut cream</li>
+          <li>1.5 oz pineapple juice</li>
+          <li>1 oz coconut rum</li>
+          <li>splash of coconut milk</li>
+          <li>pineapple wedge, for garnish</li>
+        </ul>
+
+        <p>
+          Combine all the ingredients in a blender cup. Add 1 cup of ice. Blend on High until smooth. Pour contents into a tiki glass or tall glass. Garnish with the pineapple wedge.
+        </p>
+        <p class="credit">
+          <a href="http://www.epicurious.com/recipes/food/views/pina-colada-51171430">(thanks epicurious!)</a>
+        </p>
+     </recipe>
+    </div>
+-->
+  <!--mai tai
+    <div class="maiTai">
+      <img>
+      <h1>
+        MAI TAI
+      </h1>
+      <recipe>
+        <p></p>
+        <p class="credit"></p>
+     </recipe>
+ 
+
+  <!--Recipe 3: Singapore Sling
+    <div class="singaporeSling">
+      <img  src="images/Pina-Colada_6535.jpg" alt="pina colada">
+      <h1>
+        SINGAPORE SLING
+      </h1>
+      <recipe>
+        <ul class="ingredients">
+          <li>1.25 oz Bombay Sapphire Gin</li>
+          <li>Bénédictine</li>
+          <li>Cherry brandy</li>
+          <li>Club soda</li>
+          <li>Lime wedge</li>
+        </ul>
+
+        <p>
+          Pour the gin, Bénédictine and cherry brandy into a sling or highball glass. Fill with ice and top with club soda. Squeeze a lime wedge over the drink, drop it into the glass and stir. Garnish with a cherry.
+        </p>
+        <p class="credit"><a href="http://liquor.com/recipes/singapore-raffles-sling/#gs.Xt34JqM">(thanks liquor.com!)</a>
+        </p>
+     </recipe>
+     </div>
+-->
+  <!--Recipe 4: Pineapple Hop
+
+    <div class="pineappleHop">
+      <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
+      <h1>
+        PINEAPPLE HOP
+      </h1>
+      <recipe>
+        <ul class="ingredients">
+          <li>1 medium fresh pineapple, peeled and cut into 1-inch cubes</li>
+          <li>1.5 cups granulated sugar</li>
+          <li>1.5 cups apple cider vinegar</li>
+          <li>5 oz white rum</li>
+          <li>1.25 oz orgeat, such as Small Hand Foods</li>
+          <li>20 ounces India Pale Ale, such as Stone IPA</li>
+        </ul>
+        <p>
+          For the Pineapple Shrub: Place the pineapple cubes in a clean, sterilized wide-mouth container. Cover with sugar and lightly crush the pineapples using a potato masher or muddler. Cover and refrigerate 10 hours. Strain fruit (discard or save for another use) and add apple cider vinegar to the liquid. Seal with lid and refrigerate for two weeks, shaking the mixture every other day. After two weeks, strain into a clean airtight container—you'll have about 3 cups—and refrigerate. Strained shrub keeps up to 6 months.
+        </p>
+        <p>
+          For the Cocktails: In a pitcher, mix together white rum, 5 oz of Pineapple Shrub, and orgeat. Refrigerate at least 1 hour before serving, or mix and refrigerate up to 24 hours in advance. When ready to serve, add beer to the pitcher and stir gently. Serve cocktails in ice-filled highball glasses.
+        </p>
+        <p class="credit"><a href="http://www.seriouseats.com/recipes/2015/04/pineapple-hop-shrub-beer-cocktail-rum-pitcher-drink-for-parties.html">(thanks serious eats!)</a>
+        </p>
+     </recipe>
+    </div>
+  -->
+<!--Recipe 5: Hemingway Daquiri
+     <div class="hemingwayDaquiri">
+      <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
+      <h1>
+        HEMINGWAY DAQUIRI
+      </h1>
+      <recipe>
+        <ul class="ingredients">
+          <li><em>serves 2</em></li>
+          <li>2 oz white rum</li>
+          <li>.5 oz Maraschino liqueur</li>
+          <li>.75 oz lime juice</li>
+          <li>ice (for shaking)</li>
+          <li>lime wheels (for garnish)</li>
+        </ul>
+        <p>
+          Pour the rum, lime juice, grapefruit juice and maraschino liqueur in a cocktail shaker. Shake with ice, strain, and serve with a slice of lime for garnish.
+        </p>
+        <p class="credit"><a href="http://www.huffingtonpost.com/2015/06/11/hemingway-daiquiri_n_7556782.html">(thanks huffington post!)</a>
+        </p>
+     </recipe>
+    </div>
+  -->
+
+  <!--Recipe 6: Hemingway Daquiri
+     <div class="hemingwayDaquiri">
+      <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
+      <h1>
+        HEMINGWAY DAQUIRI
+      </h1>
+      <recipe>
+        <ul class="ingredients">
+          <li><em>serves 2</em></li>
+          <li>2 oz white rum</li>
+          <li>.5 oz Maraschino liqueur</li>
+          <li>.75 oz lime juice</li>
+          <li>ice (for shaking)</li>
+          <li>lime wheels (for garnish)</li>
+        </ul>
+        <p>
+          Pour the rum, lime juice, grapefruit juice and maraschino liqueur in a cocktail shaker. Shake with ice, strain, and serve with a slice of lime for garnish.
+        </p>
+        <p class="credit"><a href="http://www.huffingtonpost.com/2015/06/11/hemingway-daiquiri_n_7556782.html">(thanks huffington post!)</a>
+        </p>
+     </recipe>
+    </div>
+  -->
+
+  <div id="recipe">
+  </div>
+
+  <div class="buttonContainer">
+  <div class="resultButtons" id="redoButton"><a href="index.html">
+    NO THANKS!</a>
+  </div>
+  <div class="resultButtons" id="shareButton">
+    BOTTOMS UP!
+  </div>
+</div>
+
+</div>
+  <!--end of cocktail result container-->
+
+  <!--javascript link-->
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/java.js"></script>
+ 
+  </body>
+</html>

@@ -1,0 +1,281 @@
+/**************************************
+Aliza Sena
+GAFEWD68 Final Project
+CSS FILE
+**************************************/
+
+/**************************************
+FONTS TO USE:
+font-family: 'Economica', sans-serif; 400, 700
+font-family: 'Playfair Display', serif; 400, 700, 900, italic
+**************************************/
+
+/**************************************
+Landing Page
+**************************************/
+
+.aboutButton{
+  background-color: black;
+  color:white;
+  font-family: 'Economica', sans-serif;
+  font-weight:400;
+  width: 45px;
+  border-radius:7px;
+  padding:10px;
+  margin:10px;
+  font-size:24px;
+}
+
+.aboutButton a{
+  color:white;
+  text-decoration:none;
+}
+
+.aboutButton a:hover{
+  background-color:#FF1975;
+  color:yellow;
+}
+
+.aboutButton:hover{
+  background-color:#FF1975;
+  color:yellow;
+}
+
+.aboutButton:link{
+  background-color: black;
+  color:white;
+}
+
+.splash {
+  font-family: 'Economica', sans-serif;
+  font-weight:700;
+  font-size: 95px;
+  text-align:center;
+  padding: 180px;
+}
+
+.splash > .instructions{
+  font-family:'Playfair Display', serif;
+  font-weight:400px;
+  font-size:40px;
+}
+
+body {
+  background: #99FFCC;
+}
+
+.questionSection{
+  margin:auto;
+  width:70%;
+  padding:3%;
+  border-radius:7px;
+  background-color:yellow;
+  margin-bottom:100px;
+  vertical-align:top;
+}
+
+/*
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+}
+*/
+
+.question {
+    font-family: 'Economica', sans-serif;
+    font-size:24px;
+    text-align:center;
+    margin-bottom:3%;
+    width:auto;
+    font-weight:700;
+    vertical-align:top;
+}
+
+.answer {
+  margin:1%;
+  width:26.5%;
+  height:50px;
+  padding:2%;
+  padding-top:5%;
+  background-color:#FF1975;
+  display:inline-block;
+  border-radius:5px;
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-weight:700;
+  vertical-align:top;
+}
+
+.answer::selection{
+  background-color:white;
+}
+
+/**************************************
+RECIPES
+************************************/
+
+img {
+  float: left;
+  max-width:40%;
+  margin-right: 5%;
+}
+
+.recipeText {
+  clear:both;
+}
+
+.cocktailResult {
+  margin: 3%;
+}
+
+.cocktailResult h1 {
+  font-family: 'Economica', sans-serif;
+  font-size:30px;
+  font-weight:700;
+  padding-bottom: 2%;
+}
+
+.cocktailResult recipe {
+  font-family:'Playfair Display', serif;
+  font-weight:700;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+/**************************************
+SHARING BUTTONS
+************************************/
+.resultButtons{
+background-color:black;
+border-radius:7px;
+font-family: 'Economica', sans-serif;
+font-size: 30px;
+color:white;
+max-width:30%;
+font-weight:700;
+clear:both;
+}
+
+.resultButtons:hover{
+  background-color:#FF1975;
+
+}
+
+.resultButtons a:link{
+color: white;
+}
+
+#redoButton{
+display:inline-block;
+padding:5%;
+margin:5%;
+clear:both;
+}
+
+#redoButton a:visited{
+  color:white;
+}
+
+#shareButton {
+  background-color: white;
+  color: black;
+  display:inline-block;
+  padding:5%;
+  margin:5%;
+  clear:both;
+}
+
+#shareButton:hover{
+  background-color:#FF1975;
+}
+
+.buttonContainer{
+  border:black 1px solid;
+  display:block;
+}
+
+@media (max-width: 480px) {
+  .hello {
+    width: 200px;
+    border: 5px dotted blue;
+  }
+}
+/**************************************
+Bouncing Arrow Graphic
+***********************************
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}

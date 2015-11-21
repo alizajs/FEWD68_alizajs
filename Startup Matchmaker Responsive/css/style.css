@@ -1,0 +1,236 @@
+
+/*font-family: 'Lora', serif; 400, 700, italic
+/*font-family: 'Oswald', sans-serif; 300, 400, 700
+/*font-family: 'Open Sans', sans-serif;
+
+/*
+/****************************
+GLOBAL STYLES
+****************************/
+.clearfix { display: inline-block; }
+
+header{
+  background-color: black;
+  border-bottom-color:yellow;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+}
+
+h1 {
+  color: yellow;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  padding: 4%;
+  font-size: 24px;
+  float: left;
+  background-color:black;
+  height:20px;
+  width:100%;
+}
+
+#hamburger {
+  padding: 5px;
+  margin: 10px;
+  float:right;
+  background-color:white;
+  height:1px;
+  width: 5px;
+}
+
+ #navBar {
+  display:none;
+}
+
+/*************************** 
+slogan section 
+****************************/
+.slogan{
+  display: none;
+}
+
+.slogan .tastespan {
+  color:gray;
+  text-decoration:line-through;
+}
+
+.slogan .arespan {
+  border-bottom:solid 3px yellow;
+}
+
+/*************************** 
+photograph section 
+****************************
+.backgroundPhoto {
+  background-image: url("../images/coworking.jpg");
+  background-size: cover;
+  height: 90%;
+}
+
+.overlayText{
+  background-color:rgba(255,255,255,.85);
+  width: 50%;
+  margin-left:20%;
+  box-shadow: 1px 1px 1px 1px #888888;
+  padding:5%;
+}
+
+p {
+  font-family:'Open Sans', sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:175%;
+}
+
+.match{
+  font-size:18px;
+  font-weight:700;
+}
+
+.profileButton{
+  width: 150px;
+  text-align:center;
+  border-radius:5px;
+  margin:5%;
+  background-color:yellow;
+  font-family: 'Oswald', sans-serif;
+  font-weight:700;
+  padding:3%;
+}
+
+.extraText {
+  display:none;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+/** html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+/*************************** 
+CTA section 
+****************************/
+
+.cta {
+  background-color:#DCDCDC;
+  width:100%;
+}
+
+h4{
+font-family:'Lora', serif;
+font-size:18px;
+font-weight:700;
+padding-bottom:3%;
+text-align:left;
+padding-left: 3%;
+}
+
+.cta p{
+  font-size:16px;
+  line-height:175%;
+  padding-bottom:3%;
+  padding-top:3%;
+  padding-left:3%;
+}
+
+div > .grayButton{
+  border-radius:5px;
+  background-color:gray;
+  padding:3%;
+  font-family: 'Oswald', sans-serif;
+  width: 80%;
+  text-align:center;
+  margin: 0 auto;
+}
+
+/*
+.cta{
+  background-color:#DCDCDC;
+  display:inline-block;
+  width:100%
+}
+
+.cta > div{
+  display:inline-block;
+  float:center;
+  width: 25%;
+  border-right: 1px gray solid;
+  padding:20px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+/*************************** 
+footer section 
+****************************/
+
+footer{
+  background-color:black;
+  padding:5px;
+  color: white;
+  font-family:'Open Sans', sans-serif;
+  font-size:11px;
+}
+
+/*************************** 
+DESIGNING FOR TABLET
+****************************/
+
+@media (min-width: 460px) and (max-width:700px){
+  #hamburger {
+    display:none;
+  }
+
+  #navBar {
+    display:inline-block;
+    color:white;
+  }
+
+  h2 {
+  display:inline-block;
+  color: white;
+  padding: 10px;
+}
+
+h2.mainNav {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+h2.secondNav {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.slogan{
+  display:block;
+  text-align:center;
+  padding:3%;
+  font-family:'Lora', serif;
+  font-style:italic;
+  font-size: 26px;
+  font-weight: 700;
+  color: black;
+  background-color:#DCDCDC;
+  }
+
+  .extraText {
+    display:block;
+  }
+}
+
+/*************************** 
+DESIGNING FOR DESKTOP
+****************************/
