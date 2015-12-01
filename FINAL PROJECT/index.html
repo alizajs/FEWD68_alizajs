@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html>
+
   <head>
+
     <meta charset="utf-8">
       <meta name="description" content="Decide what you're drinking tonight">
       <meta name="keywords" content="cocktail, whiskey, rum, tequila, vodka, gin, recipe, bartender">
@@ -11,102 +13,195 @@
 
     <title>DrinkFinder</title>
 
+    <!--JQuery Link-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- external CSS link -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- external Javascript link -->
-    <link rel="javascript" href="javascript/java.js">
 
     <!-- JQuery link -->   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+    <!-- external Javascript and JQuery UI link -->
+    <script src="java.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
+    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
+
   </head>
 
   <body>
-    <div id="container">
 
-    <!-- Header (About Button) -->
-  <header>
-    <div class="aboutButton"><a href="about.html">About</a></div>
-  </header>
+    <!--Header (About Button)-->
+    <header>
+      <div class="aboutButton">
+        <a href="about.html">ABOUT</a>
+      </div>
+    </header>
 
-<!-- Welcome Splash Page -->
-    <div class="splash">
+    <!-- Welcome/Landing Page -->
+    <section id="landingPanel" class="splash">
       
-      <div>
+      <div class="hellothere">
       HELLO THERE!
       </div>
 
       <div class="instructions">
-      It's 4 o'clock somewhere. What will you have?
+      It's 5 o'clock somewhere. What will you have?
+      </div><br>
+
+      <!-- Tiki Graphic that shakes -->
+      <div class="shake-slow">
+        <img src="images/tiki-clip-art.png">
       </div>
-   
-    </div>
+  
+    </section>
 
-<!-- Down Arrow -->
-    <div class="arrow bounce">
-    </div>
+<!-- Question Section 1-->
+<form>
 
-<!-- Question Section -->
-  <div>
-
+  <section id="questionPage1">
     <div class="questionSection">
-      <div class="question">WHO IS YOUR SPIRITUAL DRINKING BUDDY?</div>
+      <h1 class="question">WHO IS YOUR SPIRITUAL DRINKING BUDDY?</h1>
       <div class="answerContainer">
-        <div id="q1a1" class="answer">Ernest Hemingway</div>
-        <div id="q1a2" class="answer">Jimmy Buffet</div>
-        <div id="q1a3" class="answer">Cruise Captain</div>
+        <input 
+          type="radio" 
+          name="question-one" 
+          value="q1-a1" 
+          id="hemingway" 
+          class="answer" 
+          class="answer1" /> 
+            <label for="hemingway">Ernest Hemingway</label>
+        <input 
+          type="radio" 
+          name="question-one" 
+          value="q1-a2" 
+          id="buffet" 
+          class="answer" 
+          class="answer1" />
+            <label for="buffet">Jimmy Buffet</label>
+        <input 
+          type="radio" 
+          name="question-one" 
+          value="q1-a3" 
+          id="captain" 
+          class="answer" 
+          class="answer1" />
+            <label for="captain">Cruise Captain</label>
       </div>
+     <img src="images/bottle.png" height="100px">
     </div>
+  </section>
 
-<div>arrow</div>
 
+<!-- Question Section 2-->
+  <section id="questionPage2">
     <div class="questionSection">
-      <div class="question">HOW FANCY ARE YOU FEELING?</div>
-      <div id="q2a1" class="answer">Tiki Royalty</div>
-      <div id="q2a2" class="answer">Hula Winner</div>
-      <div id="q2a3" class="answer">Plastic Lei</div>
+      <h1 class="question">HOW FANCY ARE YOU FEELING?</h1>
+    <div class="answerContainer"> 
+      <input
+        type="radio"
+        name="question-two"
+        value="q2-a1" 
+        id="tikiRoyalty"
+        class="answer"
+        class="answer2" />
+          <label for="tikiRoyalty">Tiki Royalty</label>
+      <input
+        type="radio"
+        name="question-two"
+        value="q2-a2" 
+        id="hulaWinner"
+        class="answer"
+        class="answer2" />
+          <label for="hulaWinner">Hula Winner</label>      
+      <input
+        type="radio"
+        name="question-two"
+        value="q2-a3" 
+        id="plasticLei"
+        class="answer"
+        class="answer2" />
+          <label for="plasticLei">Plastic Lei</label>
     </div>
+    <img src="images/bottle.png" height="100px">
+    </div>
+  </section>
 
-    <div id="question3"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-  </div>
+
+<!-- Question Section 3-->
+  <section id="questionPage3">
+    <div class="questionSection">
+    <h1 class="question">CHOOSE YOUR FLAIR:</h1>
+
+    <div class="answerContainer">
+      <input
+        type="radio"
+        name="question-three"
+        value="q3-a1"
+        id="umbrella" 
+        class="answer" 
+        class="answer3" />
+          <label for="umbrella">Paper Umbrella</label>
+      <input
+        type="radio"
+        name="question-three"
+        value="q3-a2"
+        id="monkey" 
+        class="answer" 
+        class="answer3" />
+          <label for="monkey">Plastic Monkey</label>
+      <input
+        type="radio"
+        name="question-three"
+        value="q3-a3"
+        id="dolphin" 
+        class="answer" 
+        class="answer3" />
+          <label for="dolphin">Banana Dolphin</label>
+    </div>  
+    <img src="images/bottle.png" height="100px">
+    </div>
+  </section>
+
+</form>
 
 <!-- Recipe Section -->
-<div class="cocktailResult">
+<section id="cocktailPage">
 
-  <!--Recipe 1: Zombie-->
-    <div class="zombie">
-      <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
+    <!--Recipe 1: Zombie-->
+    <div id="zombie" class="cocktailResult">
+      <img src="images/Pina-Colada_6535.jpg" alt="pina colada" height="400px">
       <h1>
         ZOMBIE
       </h1>
+
       <recipe>
-        <ul class="igredients">
+        <ul class="ingredients">
           <li>1.5 oz Jamaican rum</li>
           <li>1.5 oz gold Puerto Rican rum</li>
           <li>1 oz 151-proof Demerara rum</li>
           <li>1/8 tsp Herbsaint or Pernod</li>
-          <li>1/2 oz falernum</li>
+          <li>1/2 oz <span class="tooltip" data-tooltip="Falernum (pronounced fah-learn-um) is a sweet syrup used in Caribbean and tropical drinks. It contains flavors of almond, ginger and/or cloves, and lime, and sometimes vanilla or allspice.">falernum</span></li>
           <li>1/2 oz Donn’s Mix (see below)</li>
           <li>1 tsp grenadine</li>
           <li> dash Angostura bitters</li>
           <li>6 oz crushed ice</li>
-        </ul>
+        </ul> <br>
 
-        <p>Put everything in blender, saving the ice for last. Blend at high speed for no more than 5 seconds. Pour into a glass and add ice cubes to fill. Garnish.</p>
+          <p>Put everything in blender, saving the ice for last. Blend at high speed for no more than 5 seconds. Pour into a glass and add ice cubes to fill. Garnish.
+          </p> <br>
         <p class="credit">
           <a href="http://imbibemagazine.com/recipe-zombie/">(thanks imbibe!)</a>
         </p>
      </recipe>
     </div>
 
-  <!--Recipe 2: Pina Colada
-    <div class="pinaColada">
-      <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
+    <!--Recipe 2: Pina Colada-->
+    <div id="pinaColada" class="cocktailResult">
+      <div class="imgdiv"><img src="images/Pina-Colada_6535.jpg" alt="pina colada" height="400px"></div>
       <div class="recipeText">
       <h1>
         PINA COLADA
@@ -118,7 +213,7 @@
           <li>1 oz coconut rum</li>
           <li>splash of coconut milk</li>
           <li>pineapple wedge, for garnish</li>
-        </ul>
+        </ul><br>
 
         <p>
           Combine all the ingredients in a blender cup. Add 1 cup of ice. Blend on High until smooth. Pour contents into a tiki glass or tall glass. Garnish with the pineapple wedge.
@@ -128,29 +223,44 @@
         </p>
      </recipe>
     </div>
--->
-  <!--mai tai
-    <div class="maiTai">
+</div>
+
+    <!--Recipe 3: Mai Tai-->
+    <div id="maiTai" class="cocktailResult">
       <img>
       <h1>
-        MAI TAI
+        TRADER VIC'S ORIGINAL MAI TAI
       </h1>
       <recipe>
-        <p></p>
+        <ul class="ingredients">
+          <li>2 oz aged rum</li>
+          <li>3/4 ounce freshly squeezed lime juice, juiced lime half reserved</li>
+          <li>1/2 ounce orange curaçao</li>
+          <li>1/4 ounce <span class="tooltip" data-tooltip="Combine two parts sugar to one part water and bring to a boil until sugar dissolves.">rich simple syrup</span></li>
+          <li>1/4 ounce <span class="tooltip" data-tool-tip"Orgeat syrup is a sweet syrup made from almonds, sugar, and rose water or orange flower water.">orgeat</span></li>
+          <li>1 cup crushed ice</li>
+          <li>1 mint sprig, for garnish</li>
+        </ul>
+        <p>
+          Combine all ingredients except the mint sprig in a cocktail shaker, shake vigorously, and pour the entire contents into a double Old Fashioned glass.
+        </p>
+        <p>
+          Garnish with the juiced lime half and a mint sprig.
+        </p>
         <p class="credit"></p>
      </recipe>
- 
+    </div>
 
-  <!--Recipe 3: Singapore Sling
-    <div class="singaporeSling">
-      <img  src="images/Pina-Colada_6535.jpg" alt="pina colada">
+    <!--Recipe 4: Singapore Sling-->
+    <div id="singaporeSling" class="cocktailResult">
+      <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
       <h1>
         SINGAPORE SLING
       </h1>
       <recipe>
         <ul class="ingredients">
           <li>1.25 oz Bombay Sapphire Gin</li>
-          <li>Bénédictine</li>
+          <li><span class="tooltip" data-tool-tip="Bénédictine is a herbal liqueur beverage developed by Alexandre Le Grand in the 19th century and produced in France.">Bénédictine</span></li>
           <li>Cherry brandy</li>
           <li>Club soda</li>
           <li>Lime wedge</li>
@@ -163,10 +273,9 @@
         </p>
      </recipe>
      </div>
--->
-  <!--Recipe 4: Pineapple Hop
 
-    <div class="pineappleHop">
+    <!--Recipe 5: Pineapple Hop-->
+    <div id="pineappleHop" class="cocktailResult">
       <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
       <h1>
         PINEAPPLE HOP
@@ -178,7 +287,7 @@
           <li>1.5 cups apple cider vinegar</li>
           <li>5 oz white rum</li>
           <li>1.25 oz orgeat, such as Small Hand Foods</li>
-          <li>20 ounces India Pale Ale, such as Stone IPA</li>
+          <li>20 oz India Pale Ale, such as Stone IPA</li>
         </ul>
         <p>
           For the Pineapple Shrub: Place the pineapple cubes in a clean, sterilized wide-mouth container. Cover with sugar and lightly crush the pineapples using a potato masher or muddler. Cover and refrigerate 10 hours. Strain fruit (discard or save for another use) and add apple cider vinegar to the liquid. Seal with lid and refrigerate for two weeks, shaking the mixture every other day. After two weeks, strain into a clean airtight container—you'll have about 3 cups—and refrigerate. Strained shrub keeps up to 6 months.
@@ -190,9 +299,9 @@
         </p>
      </recipe>
     </div>
-  -->
-<!--Recipe 5: Hemingway Daquiri
-     <div class="hemingwayDaquiri">
+
+      <!--Recipe 6: Hemingway Daquiri-->
+      <div id="hemingwayDaquiri" class="cocktailResult">
       <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
       <h1>
         HEMINGWAY DAQUIRI
@@ -213,50 +322,98 @@
         </p>
      </recipe>
     </div>
-  -->
 
-  <!--Recipe 6: Hemingway Daquiri
-     <div class="hemingwayDaquiri">
+
+    <!--Recipe 7: Top Notch Volcano-->
+     <div id="volcano" class="cocktailResult">
       <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
+      <div class="recipeText">
       <h1>
-        HEMINGWAY DAQUIRI
+        TOP NOTCH VOLCANO
       </h1>
       <recipe>
         <ul class="ingredients">
-          <li><em>serves 2</em></li>
-          <li>2 oz white rum</li>
-          <li>.5 oz Maraschino liqueur</li>
-          <li>.75 oz lime juice</li>
-          <li>ice (for shaking)</li>
-          <li>lime wheels (for garnish)</li>
+          <li><em>serves 4</em></li>
+          <li>4 oz fresh lime juice</li>
+          <li>4 oz fresh pineapple juice </li>
+          <li>1 oz passionfruit nectar</li>
+          <li>1 oz Luxardo Maraschino liqueur</li>
+          <li>4 oz aged white rum</li>
+          <li>4 oz dark rum</li>
+          <li>4 oz. Demerara simple syrup</li>
+          <li>Grated cinnamon (optional, for sparks)</li>
+          <li>Grated nutmeg (optional, for sparks)</li>
+          <li>Tiki mugs or very long straws for serving</li>
+        </ul> <br>
+        <p>
+          Combine all ingredients except spices in a pitcher over ice. Stir until well mixed and chilled. Strain into the liquid portion of the volcano bowl and add large blocks of fresh ice. The size of the cubes is important, so that they keep the drink cold and melt slowly.
+        </p> <br>
+        <p>
+          Place toast crumbs soaked in lemon extract in the volcano reservoir of the bowl. Light the toast. Place long straws in bowl, or ladle drink into individual tiki mugs.
+        </p> <br>
+        <p>
+          Optional: For added flare, combine the cinnamon and nutmeg in a shaker. Shake sprinkles over the flame to create sparks.
+        </p> <br>
+        <p class="credit"><a href="http://robbvices.com/drink/all-firedc">(thanks robb vices!)</a>
+        </p> <br>
+     </recipe>
+   </div>
+    </div>
+
+    <!--Recipe 8: Planters Punch-->
+     <div id="plantersPunch" class="cocktailResult">
+      <img src="images/Pina-Colada_6535.jpg" alt="pina colada">
+      <div class="recipeText">
+      <h1>
+        PLANTER'S PUNCH
+      </h1>
+      <recipe>
+        <ul class="ingredients">
+          <li><em>serves 4</em></li>
+          <li>1.25 oz Margaritaville® Silver Rum</li>
+          <li>.75 oz Margaritaville® Dark Rum</li>
+          <li>1 oz sour mix</li>
+          <li>1 oz orange juice</li>
+          <li>1 oz pineapple juice</li>
         </ul>
         <p>
-          Pour the rum, lime juice, grapefruit juice and maraschino liqueur in a cocktail shaker. Shake with ice, strain, and serve with a slice of lime for garnish.
+          Combine ingredients in a shaker except for the dark rum. Shake and pour into a glass with ice. Float dark rum. Garnish with an orange wedge and cherry.
         </p>
-        <p class="credit"><a href="http://www.huffingtonpost.com/2015/06/11/hemingway-daiquiri_n_7556782.html">(thanks huffington post!)</a>
+        <p class="credit"><a href="http://www.margaritaville.com/drink-recipes">(thanks margaritaville!)</a>
         </p>
      </recipe>
+   </div>
     </div>
-  -->
 
-  <div id="recipe">
-  </div>
-
+ <!--buttons at the bottom-->
   <div class="buttonContainer">
-  <div class="resultButtons" id="redoButton"><a href="index.html">
-    NO THANKS!</a>
+      <div class="resultButtons" id="redoButton">
+        <a href="index.html">
+          NO THANKS...
+        </a>
+      </div>
+      <div class="resultButtons" id="shareButton">
+        <a href="http://twitter.com/intent/tweet?text=It's+tiki+time!+Choose+your+perfect+cocktail+here" target="_blank">
+          BOTTOMS UP!
+        </a>
+      </div>
   </div>
-  <div class="resultButtons" id="shareButton">
-    BOTTOMS UP!
-  </div>
-</div>
 
-</div>
-  <!--end of cocktail result container-->
+  <!--end of cocktail result section-->
+</section>
 
-  <!--javascript link-->
-<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="js/java.js"></script>
- 
-  </body>
+
+</body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
